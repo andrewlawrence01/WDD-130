@@ -1,0 +1,115 @@
+/* Activity: Grid Alignment Concepts */
+
+/* Grid container with items smaller than their cells */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 400px;
+  width: 100%;
+  
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.red1{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.yellow1{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.green1{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.blue1{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+/* Grid container with fixed-size rows and columns */
+.content2 {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 150px;
+  height: 400px;
+  width: 100%;
+
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.red2{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.yellow2{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.green2{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.blue2{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+/* Grid and items both smaller than parent container */
+.content3 {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  height: 400px;
+  width: 100%;
+
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.red3{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.yellow3{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.green3{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.blue3{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
