@@ -1,177 +1,185 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rock+Salt&display=swap');
 
-body {
-    background-color: #fcfbfb;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-}
-
-.home-title,
-.msg h2 {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-}
-
-.book, .join {
-    font-size: 18px;
-}
-
-.msg p {
-    font-size: 0.8em;
-}
-
-.msg {
-    background-color: #f2f2f2;
-    line-height: 1.5em;
-    padding: 35px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fcfbfb;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-size: 22px;
-}
-
-h2 {
-    margin: 0;
-}
-
-#logo_link {
-    padding-top: 5px;
-}
-
-nav a {
-    padding: 35px;
-}
-
-.book, .join {
-    padding: 15px 30px;
-}
-
-.icon {
-    padding-top: 10px;
-}
-
-.msg p {
-    padding-bottom: 15px;
-}
-
-footer {
-    padding: 25px 50px;
-}
-
-footer .social img {
-    padding-top: 15px;
-}
-
-.home-title {
-    margin-top: 10px;
-}
-
-.book, .join {
-    margin-top: 50px;
-}
-
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-footer {
-    margin-top: 200px;
-}
-
-.book, .join {
-    border-radius: 5px;
-}
-
-.card-img {
-    border: 10px solid #4CAF50; /* or another color from your site plan */
-}
-
-main section img {
+/* Reset and Base Styles */
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-/* Limit width and center content */
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
+body {
+    background-color: #fcfbfb;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Center elements */
-nav a,
-#hero-msg h1, #hero-msg h4,
-.button-box,
-main section {
+header {
+    background-color: #5e6653;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     text-align: center;
 }
 
-/* Background container */
-#background {
-    height: 725px;
-    background-color: #eee; /* change as needed */
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
 }
 
-/* Background colors */
-body {
-    background-color: #fcfbfb;
-}
-header {
-    background-color: rgba(20, 30, 13, 0.7);
-}
-nav a:hover {
-    background-color: black;
-}
-.book, .join {
-    background-color: #4CAF50;
-}
-.book:hover, .join:hover {
-    background-color: #388E3C;
-}
-.msg {
-    background-color: #f2f2f2;
-}
-footer {
-    background-color: #222;
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Text colors */
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
 }
+
 nav a:hover {
-    color: #d9c2a3;
+    background-color: #3c3f34;
+    border-radius: 5px;
 }
-.home-title, h4,
-.msg h2, .msg p,
-.book, .join,
-.book:hover, .join:hover,
-footer, footer a {
-    color: #fff;
+
+#hero {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
 }
-footer p {
-    font-size: 1.2em;
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
+#hero-msg {
+    margin-top: -50px;
+    background: transparent;
+}
+
+.home-title {
+    font-family: 'Rock Salt', cursive;
+    color: #5e6653;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.button-box {
+    margin-bottom: 30px;
+}
+
+.book, .join {
+    background-color: #d6bfa8;
+    color: #333;
+    padding: 10px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book:hover, .join:hover {
+    background-color: #c1a88f;
+}
+
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.card-img {
+    width: 90%;
+    max-width: 400px;
+    border: 8px solid #d6bfa8;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 50px;
+    margin: 10px auto;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    text-align: center;
+}
+
+.rivers-card h2, .camping-card h2, .rapids-card h2 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.mountains {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.msg {
+    background-color: #5e6653;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.msg h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.msg p {
+    font-size: 1em;
+    padding-bottom: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #5e6653;
+    color: #d6bfa8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
 footer a {
+    color: #d6bfa8;
     text-decoration: none;
 }
-footer p a:hover {
+
+footer a:hover {
     text-decoration: underline;
 }
 
-/* Image widths */
-.logo {
-    width: 80px;
+footer .social {
+    margin-top: 10px;
 }
-.icon {
-    width: 80px;
-}
-#hero-img {
 
-    width: 100%;}
+footer .social img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
