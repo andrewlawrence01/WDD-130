@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    font-family: "Roboto Slab",serif;
+}
+
+.card{
+    background-color: white;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+}
+.card h6{
+    color: rgb(63,91,138);
+    margin-bottom: 0.15em;
+    padding: 0;
+}
+.card h2{
+    margin-top: 0.15em;
+    margin-bottom: 0;
+    font-family: "Roboto",sans-serif;
+}
+.card p{
+    color: rgb(147,137,147);
+    margin: 1.5em;
+}
+
+.card-footer{
+    color: white;
+    background-color: rgb(82,102,135);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3px;
+}
+.card-footer-item{
+    background-color: rgb(63,91,138);
+    text-align: center;
+    padding: 0.8em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.card-footer-item-title{
+    font-size: 0.5em;
+    vertical-align: super;
+}
+.card-footer-item-title sup
