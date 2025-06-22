@@ -171,6 +171,89 @@ footer .social img {
     margin: 0 10px;
 }
 
+/* ========== Rivers Page Styles ========== */
+
+.rivers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rivers-intro h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #5e6653;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rivers-intro p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.rivers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.river {
+    border: 8px solid #d6bfa8;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+}
+
+.river h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.river img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.river p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.join-us {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.join-button {
+    background-color: #d6bfa8;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #c1a88f;
+}
+
+/* ========== Responsive Styles ========== */
 @media (min-width: 768px) {
     header {
         flex-direction: row;
