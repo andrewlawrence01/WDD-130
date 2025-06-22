@@ -13,15 +13,51 @@ body {
   line-height: 1.6;
   background-color: var(--accent-color);
   color: var(--secondary-color);
-  padding: 20px;
+  padding: 0;
   margin: 0;
 }
 
-header, footer {
+header {
   background-color: var(--primary-color);
   color: var(--accent-color);
-  text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #444;
 }
 
 h1, h2, h3, h4 {
@@ -30,15 +66,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 img {
@@ -48,6 +86,19 @@ img {
   margin: 1rem 0;
 }
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.video-card {
+  background-color: #222;
+  padding: 1rem;
+  border: 1px solid #555;
+  text-align: center;
+}
+
 ul {
   list-style-type: square;
   padding-left: 20px;
@@ -55,14 +106,22 @@ ul {
 
 a {
   color: var(--primary-color);
-  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.colored {
+.cta, .colored {
   color: var(--primary-color);
   font-weight: bold;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
 }
