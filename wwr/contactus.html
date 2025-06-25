@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="contactus.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Dry Oar Boating</title>
+</head>
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" alt="logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html">Adventures</a>
+      <a href="site-plan-rafting.html">Site Plan</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <h1 class="form-title">Contact Us</h1>
+    <div id="feedback"></div>
+    
+    <form>
+      <label for="user_name">Name:</label>
+      <input type="text" id="user_name" name="user_name" required>
+
+      <label for="user_email">Email:</label>
+      <input type="email" id="user_email" name="user_email" required>
+
+      <label for="user_message">Message:</label>
+      <textarea id="user_message" name="user_message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Dry Oar &copy; 2025 - Andrew Lawrence</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+      <a href="https://facebook.com">
+        <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com">
+        <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+
+    formElement.addEventListener('submit', function(e) {
+      e.preventDefault();
+      feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+        '! Thank you for your message. We will get back with you as soon as possible!';
+      feedbackElement.style.display = "block";
+      document.body.classList.toggle('moveDown');
+    });
+  </script>
+</body>
+</html>
