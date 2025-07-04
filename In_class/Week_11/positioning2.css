@@ -1,0 +1,68 @@
+body {
+  font-family: Georgia, serif;
+  padding: 2rem;
+}
+
+.block {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Section (block) alignment */
+.block1 {
+  margin-left: 0;
+  margin-right: auto; /* left-aligned block */
+}
+
+.block2 {
+  margin: 0 auto; /* center-aligned block */
+}
+
+.block3 {
+  margin-left: auto;
+  margin-right: 0; /* right-aligned block */
+}
+
+.block4 {
+  margin: 0 auto; /* center-aligned block */
+}
+
+/* Paragraph alignment within blocks 1-3 */
+.block1 p:nth-of-type(1),
+.block2 p:nth-of-type(1),
+.block3 p:nth-of-type(1) {
+  text-align: left;
+}
+
+.block1 p:nth-of-type(2),
+.block2 p:nth-of-type(2),
+.block3 p:nth-of-type(2) {
+  text-align: center;
+}
+
+.block1 p:nth-of-type(3),
+.block2 p:nth-of-type(3),
+.block3 p:nth-of-type(3) {
+  text-align: right;
+}
+
+/* Paragraph alignment for block4 */
+.block4 p:nth-of-type(1) {
+  text-align: right;
+}
+
+.block4 p:nth-of-type(2) {
+  text-align: center;
+}
+
+.block4 p:nth-of-type(3),
+.block4 p:nth-of-type(4) {
+  text-align: left;
+}
+
+/* Optional: Style the heading */
+h1 {
+  margin-top: 0;
+}
